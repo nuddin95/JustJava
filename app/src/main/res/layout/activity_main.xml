@@ -13,6 +13,15 @@
         android:text="QUANTITY"
         />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_button"
+        android:layout_marginBottom="16dp"
+        android:text="+"
+        android:onClick="addOrder"
+        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,6 +29,15 @@
         android:text="0"
         android:textSize="16sp"
         android:textColor="#000"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/subtract_button"
+        android:layout_marginTop="16dp"
+        android:text="-"
+        android:onClick="subtractOrder"
         />
 
     <TextView

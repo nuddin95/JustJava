@@ -10,6 +10,7 @@ import java.text.NumberFormat;
  * This app displays an order form to order coffee.
  */
 public class MainActivity extends AppCompatActivity {
+    int quantity = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +22,23 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        int quantity = 3;
-        display(quantity);
         displayPrice(quantity * 5);
+    }
+
+    /**
+     * This method is called when the add button is clicked.
+     */
+    public void addOrder(View view) {
+        quantity++;
+        display(quantity);
+    }
+
+    /**
+     * This method is called when the subtract button is clicked.
+     */
+    public void subtractOrder(View view) {
+        quantity--;
+        display(quantity);
     }
 
     /**
